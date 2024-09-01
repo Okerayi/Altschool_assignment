@@ -1,0 +1,129 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* header {
+    position: relative;
+    text-align: center;
+    background: #2c3e50;
+}
+
+header nav{
+    padding: 20px 10px 0 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: font-size 0.7s ease-in-out, color 0.3s ease-in; /* Smooth transition for scaling and color 
+}*/
+
+/* nav a:hover {
+    color: #2980b9;
+    font-size: 20px;
+} */
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+ nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    left: 0;
+    background-color: #000000;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+    
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+main{
+    /* width: 90%; */
+    /* max-width: 10000px; */
+    /* margin: 20px auto; */
+    background: #ffffff;
+    padding: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+h2 {
+    color: #000000;
+    /* margin-bottom: 15px; */
+    font-size: 40px;
+    display: block;
+}
+
+/* picture img {
+    width: 200%;
+    /* border-radius: 50%;
+    height: 400px;
+    margin-bottom: 20px;
+}*/
+
+.column{
+    float: left;
+    width: 24.4%;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+audio, video {
+    width: 70%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.Introduction {
+    text-align: justify;
+}
